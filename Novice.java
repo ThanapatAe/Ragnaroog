@@ -19,8 +19,14 @@ public class Novice {
         
     }
 
+    public int currentLevel(){
+        level = level;
+        return level;
+    }
+
     public int levelUp(){     
             level = level+1;
+            this.currentLevel();
             return level ;
         }
         
@@ -87,8 +93,32 @@ public class Novice {
         return currHp;
     }
 
+
+
+
+
+
+
+
+
+    
+
 }
 
 
     
 
+
+
+
+    class Swordsman extends Novice{
+        public int normalAttact;
+        public int bash;
+
+        public Swordsman(){
+            this.normalAttact = level*3;
+            this.bash = level*4;
+        }
+
+        
+    }

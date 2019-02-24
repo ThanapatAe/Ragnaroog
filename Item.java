@@ -29,4 +29,27 @@ public class Item {
    
 
     }
+
+    class ItemAcolyte extends Item {
+        public staff(int addUpHp, int addUpDamage)
+        {
+            addUpHp = 30;
+            addUpDamage = 10;
+        };
+        public int cover;
+
+
+
+    }
+
+    class ItemSwordman extends Item {
+        public sword(int addUpHp, int addUpDamage)
+        {
+            addUpHp = 10;
+            addUpDamage = 50;
+        };;
+        public int armor;
+    }
+
+
  
